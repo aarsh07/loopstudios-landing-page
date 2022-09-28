@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utils.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navBar flex justify-around align-center">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="" class="logoImg">
+      </div>
+
+      <ul class="list desktop-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+
+      <img src="/images/icon-hamburger.svg" alt="" class="hamBurger">
+    </nav>
+
+    <div class="heading flex justify-center align-center">
+      <h1 class="mainHeading">Immersive experiences that deliver</h1>
+    </div>
+  </div>
+
+  <div class="sContainer flex justify-center align-center">
+    <div class="main-img">
+      <!-- <img src="/images/desktop/image-interactive.jpg" alt=""> -->
+    </div>
+
+    <div class="iactiveContent flex align-center">
+      <h2 class="semiHeading">The leader in interactive VR</h2>
+
+      <p class="activeContent">
+        Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe. Our award-winning
+        creations have transformed businesses through digital experiences that bind
+        to their brand.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="creations flex ">
+    <div class="info flex justify-around">
+      <h2 class="contentHeading">Our creations</h2>
+      <button class="btn"><a href="#">See all</a></button>
+    </div>
+
+    <div class="first flex justify-center">
+      <div class="card">
+        <img src="/images/desktop/image-deep-earth.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-deep-earth.jpg" alt="" class="mobile-img">
+        <h5 class="iName">Deep earth</h5>
+      </div>
+
+      <div class="card">
+        <img src="/images/desktop/image-night-arcade.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-night-arcade.jpg" alt="" class="mobile-img">
+        <h5 class="iName">Night arcade</h5>
+      </div>
+
+      <div class="card">
+        <img src="/images/desktop/image-soccer-team.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-soccer-team.jpg" alt="" class="mobile-img">
+        <h5 class="iName">soccer team vr</h5>
+      </div>
+
+      <div class="card">
+        <img src="/images/desktop/image-grid.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-grid.jpg" alt="" class="mobile-img">
+        <h5 class="iName">The grid</h5>
+      </div>
+    </div>
+
+    <div class="second flex justify-center">
+
+      <div class="card">
+        <img src="/images/desktop/image-from-above.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-from-above.jpg" alt="" class="mobile-img">
+        <h5 class="iName">from up above vr</h5>
+      </div>
+
+      <div class="card">
+        <img src="/images/desktop/image-pocket-borealis.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-pocket-borealis.jpg" alt="" class="mobile-img">
+        <h5 class="iName">pocket borealis</h5>
+      </div>
+
+      <div class="card">
+        <img src="/images/desktop/image-curiosity.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-curiosity.jpg" alt="" class="mobile-img">
+        <h5 class="iName">the curiosity</h5>
+      </div>
+
+      <div class="card">
+        <img src="/images/desktop/image-fisheye.jpg" alt="" class="desktop-img">
+        <img src="/images/mobile/image-fisheye.jpg" alt="" class="mobile-img">
+        <h5 class="iName">make it fisheye</h5>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="left flex">
+      <div class="logo flex justify-center">
+        <img src="/images/logo.svg" alt="">
+      </div>
+
+      <ul class="list flex justify-center">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <div class="socialLinks">
+
+        <img src="/images/icon-facebook.svg" alt="">
+        <img src="/images/icon-instagram.svg" alt="">
+        <img src="/images/icon-pinterest.svg" alt="">
+        <img src="/images/icon-twitter.svg" alt="">
+      </div>
+      <div class="copyright">
+        <p>
+          © 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>
+    const nav = document.querySelector('.navBar');
+    const list = document.querySelector('.list');
+    const hBurger = document.querySelector('.hamBurger');
+
+    hBurger.addEventListener('click', () => {
+      list.classList.toggle('desktop-menu');
+      list.classList.toggle('mobile-menu');
+      nav.classList.toggle('isMobile');
+    })
+  </script>
+</body>
+
+</html>
